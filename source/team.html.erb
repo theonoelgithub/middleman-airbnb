@@ -1,0 +1,17 @@
+
+<div id="team" class="text-center">
+  <h2>Team of the month</h2>
+
+  <div class="row">
+    <ul class="list-inline text-center">
+      <% ["tredregoo", "theonoelgithub"].each do |gh_username| %>
+        <div class="col-xs-6">
+          <li>
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "avatar-large" %>
+            <h3><%= gh_username.capitalize %></h3>
+          </li>
+        </div>
+      <% end %>
+    </ul>
+  </div>
+</div>
