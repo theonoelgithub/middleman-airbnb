@@ -12,6 +12,10 @@ body {
   justify-content: space-around;
 }
 
+.flat-name {
+  padding: 50px;
+}
+
 .form-date {
   display: flex;
   align-items: center;
@@ -24,4 +28,10 @@ body {
 
 .btn-form {
   width: 100%;
+}
+
+.form-container {
+  border-radius: 5px;
+  padding: 10px;
+  background: $light-gray;
 }
