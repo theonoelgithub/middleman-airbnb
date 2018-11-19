@@ -1,7 +1,7 @@
 #home {
   background-color: white;
   color: black;
-  height: 100vh;
+  height: responsive;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -14,4 +14,8 @@
     font-weight: bold;
     font-size: 16px;
   }
+}
+
+.home-content {
+  padding: 150px;
 }
