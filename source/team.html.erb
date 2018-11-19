@@ -1,14 +1,23 @@
+---
+title: Team of the month
+---
+
 
 <div id="team" class="text-center">
-  <h2>Team of the month</h2>
+  <h1>Team of the month</h2>
 
   <div class="row">
     <ul class="list-inline text-center">
-      <% ["tredregoo", "theonoelgithub"].each do |gh_username| %>
+      <% data.users.each do |gh| %>
         <div class="col-xs-6">
           <li>
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "avatar-large" %>
-            <h3><%= gh_username.capitalize %></h3>
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh["github_nickname"]}", class: "avatar-large" %>
+            <h2><%= gh["name"] %></h3>
+            <p>
+              <% link_to "https://github.com/#{gh.github_nickname}", target: "_blank" do %>
+                <i class="fab fa-github"></i> <%= gh.github_nickname %>
+              <% end %>
+            </p>
           </li>
         </div>
       <% end %>
