@@ -1,0 +1,54 @@
+ssaunier:
+  name: "Sebastien's home"
+  description: "Charming room in Montmartre"
+  city_name: "Paris, France"
+  city_slug: "paris"
+  rating: 4
+  advanced_description: This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur.
+  wifi: false
+  kitchen: true
+  tv: true
+  welcome_drink: true
+  accomodates: 2
+  bathroom: 1
+  bed_type: Real bed
+  bedrooms: 1
+  beds: 1
+  property_type:
+  room_type: Entire home/apt
+papillard:
+  name: "Boris' home"
+  description: Small flat in Tokyo
+  city_name: "Tokyo, Japan"
+  city_slug: "tokyo"
+  rating: 3
+  advanced_description: Middleman has the ability to generate pages which do not have a one-to-one relationship with their template files. What this means is that you can have a single template which generates multiple files based on variables. To create a proxy, you use the proxy method in your config.rb, and give the path you want to create, and then the path to the template you want to use (without any templating file extensions). Here's an example config.rb setup.
+  wifi: false
+  kitchen: true
+  tv: true
+  welcome_drink: true
+  accomodates: 2
+  bathroom: 1
+  bed_type: Camp-bed
+  bedrooms: 2
+  beds: 2
+  property_type: House
+  room_type: Entire home/apt
+tredregoo:
+  name: Thomas' casa
+  description: Nice house in Lille
+  city_name: "Lille, France"
+  city_slug: "lille"
+  rating: 5
+  advanced_description: Beautiful manor in the center of St-André-Les-Lille close to Lille. Discount price if you're ready for DIY home-work (plaster, painting, etc...)
+  wifi: true
+  kitchen: true
+  tv: true
+  welcome_drink: true
+  accomodates: 18
+  bathroom: 3
+  bed_type: Warm & confortable
+  bedrooms: 6
+  beds: 18
+  property_type: House
+  room_type: Separate

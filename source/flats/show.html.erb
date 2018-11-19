@@ -1,0 +1,100 @@
+---
+title: Airbnb flat
+---
+<!-- Access data.flats with owner's name as key -->
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+
+<!-- Banner -->
+<div class="flat-banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');">
+</div>
+<div class="container">
+  <!-- Flat-header -->
+  <div class="header-flat">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="flat-detail">
+          <div class="flat-name">
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "avatar-medium" %>
+            <p><%= flat.name %></p>
+          </div>
+          <div class="flat-description">
+            <h1><%= flat.description %></h1>
+            <p><%= flat.city_name %></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+
+
+          <form action="">
+            <h4 class="text-center">Book this flat</h4>
+            <div class="form-date">
+              <div class="form-group">
+                <input class="form-control input-lg" type="date" placeholder="checkin">
+              </div>
+              <div class="form-group">
+                <input class="form-control input-lg" type="date" placeholder="checkout">
+              </div>
+            </div>
+            <div class="form-group">
+              <select name="" id="" class="form-control input-lg">
+              <%  (1..flat.accomodates).each do |x| %>
+              <option value=<%= x %>> <%= x %> guest<%= "s" if x >1 %> </option>
+              <% end %>
+              </select>
+            </div>
+            <input type="submit" class="btn-form btn btn-primary" value="Submit">
+          </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Flat-longdescription -->
+<div class="wrapper-gray">
+  <div class="container">
+    <h2>About this flat</h2>
+    <p><%= flat.advanced_description%></p>
+    <hr>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <h4>Space</h4>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <ul class="list-unstyled">
+          <li>Accomodates: <%= flat.accomodates%></li>
+          <li>Bathrooms: <%= flat.bathroom %></li>
+          <li>Bed Type: <%= flat.bed_type %></li>
+          <li>Bedrooms: <%= flat.bedrooms %></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <ul class="list-unstyled">
+          <li>Beds: <%= flat.beds%></li>
+          <li>Property Type: <%= flat.property_type %></li>
+          <li>Room Type: <%= flat.room_type %></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <h4>Amenities</h4>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <ul class="list-unstyled">
+          <li><%= "<i class='fas fa-utensils'></i> Kitchen" if flat.kitchen %></li>
+          <li><%= "<i class='fas fa-wifi'></i> Wifi" if flat.wifi %></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <ul class="list-unstyled">
+          <li><%= "<i class='fas fa-cocktail'></i> Welcome Drink" if flat.welcome_drink %></li>
+          <li><%= "<i class='fas fa-tv'></i> TV" if flat.tv %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

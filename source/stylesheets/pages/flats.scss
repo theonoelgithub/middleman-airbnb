@@ -1,0 +1,27 @@
+body {
+  background: white;
+}
+
+.header-flat {
+  margin: 50px;
+}
+
+.flat-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper-gray {
+  background: $light-gray;
+}
+
+.btn-form {
+  width: 100%;
+}
