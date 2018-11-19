@@ -1,13 +1,13 @@
 /*
 SassC::SyntaxError: Error: Undefined variable: "$light-gray".
-        on line 22 of source/stylesheets/pages/flats.scss
+        on line 26 of source/stylesheets/pages/flats.scss
 >>   background: $light-gray;
 
    --------------^
 
 
 Backtrace:
-/home/theo/code/theonoelgithub/middleman-airbnb/source/stylesheets/pages/flats.scss:22
+/home/theo/code/theonoelgithub/middleman-airbnb/source/stylesheets/pages/flats.scss:26
 /home/theo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sassc-2.0.0/lib/sassc/engine.rb:49:in `render'
 /home/theo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/middleman-core-4.2.1/lib/middleman-core/renderers/sass.rb:68:in `evaluate'
 /home/theo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/tilt-2.0.8/lib/tilt/template.rb:109:in `render'
@@ -101,4 +101,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "SassC::SyntaxError: Error: Undefined variable: \"$light-gray\".\A         on line 22 of source/stylesheets/pages/flats.scss\A >>   background: $light-gray;\A \A    --------------^\A "; }
+  content: "SassC::SyntaxError: Error: Undefined variable: \"$light-gray\".\A         on line 26 of source/stylesheets/pages/flats.scss\A >>   background: $light-gray;\A \A    --------------^\A "; }
